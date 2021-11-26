@@ -14,10 +14,10 @@ function IndexPage(props) {
         bgImage="https://images.squarespace-cdn.com/content/v1/5de67da1631c6c6aca04d6d1/1609606031611-4HAH38DNKIQOBJKHTXFP/23521664293_b86c26ed5d_o.jpg"
         bgImageOpacity={0.7}
         title="Come, let us sing joyfully to the LORD"
-        subtitle="You've heard it. You love it. Now, you can download the Gospel music from the talented singers and musicians from Epiphany Catholic Church."
+        subtitle="You've heard it. You love it. Now, you can listen to it whenever you want. Download the Gospel music from the talented singers and musicians from Epiphany Catholic Church."
         buttonText="Get them today"
         buttonColor="secondary"
-        buttonPath="/music"
+        buttonPath="https://epiphanycatholicchurch.weshareonline.org/"
       />
       <FeaturesSection
         bgColor="secondary"

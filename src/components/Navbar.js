@@ -3,19 +3,18 @@ import AppBar from "@material-ui/core/AppBar";
 import Container from "@material-ui/core/Container";
 import Toolbar from "@material-ui/core/Toolbar";
 import Hidden from "@material-ui/core/Hidden";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import Divider from "@material-ui/core/Divider";
-import NightsStayIcon from "@material-ui/icons/NightsStay";
-import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import IconButton from "@material-ui/core/IconButton";
+import NightsStayIcon from "@material-ui/icons/NightsStay";
+import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import { makeStyles } from "@material-ui/core/styles";
 import Section from "./Section";
 import { Link } from "./../util/router";
@@ -67,16 +66,7 @@ function Navbar(props) {
               <img src={logo} alt="Logo" className={classes.logo} />
             </Link>
             <div className={classes.spacer} />
-            <Hidden mdUp={true} implementation="css">
-              <IconButton
-                onClick={() => {
-                  setDrawerOpen(true);
-                }}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-            </Hidden>
+            <Hidden mdUp={true} implementation="css" />
             <Hidden smDown={true} implementation="css">
               <Button component={Link} to="/about" color="inherit">
                 About
@@ -137,16 +127,6 @@ function Navbar(props) {
                   </Menu>
                 </>
               )}
-
-              <IconButton
-                color="inherit"
-                onClick={darkMode.toggle}
-                style={{ opacity: 0.6 }}
-              >
-                {darkMode.value && <NightsStayIcon />}
-
-                {!darkMode.value && <WbSunnyIcon />}
-              </IconButton>
             </Hidden>
           </Toolbar>
         </Container>

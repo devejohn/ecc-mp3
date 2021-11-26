@@ -20,11 +20,11 @@ function FaqPage(props) {
         size="medium"
         bgImage=""
         bgImageOpacity={1}
-        title="Ready to get started?"
+        title="Ready to get the music?"
         subtitle=""
-        buttonText="Get Started"
-        buttonColor="default"
-        buttonPath="/pricing"
+        buttonText="Let's go"
+        buttonColor="secondary"
+        buttonPath="https://epiphanycatholicchurch.weshareonline.org/"
       />
     </>
   );

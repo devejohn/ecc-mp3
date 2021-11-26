@@ -23,7 +23,7 @@ This project uses the following libraries and services:
 - Authentication - [Firebase Auth](https://firebase.google.com/products/auth)
 - Database - [Cloud Firestore](https://firebase.google.com/products/firestore)
 - Contact Form - [Google Sheets](https://www.google.com/sheets/about/)
-- Hosting - TBD
+- Hosting - [Vercel](https://vercel.com)
 
 
 ## 📚 Guide
@@ -125,7 +125,31 @@ function ItemsPage(){
 <details>
 <summary><b>Deployment</b></summary>
 <p>
-This project wasn't setup with a specific web host in mind. Please follow the Create React App <a href="https://create-react-app.dev/docs/deployment">deployment docs</a> to learn how to deploy your project to various hosts.
+Install the Vercel CLI
+
+```
+npm install -g vercel
+```
+
+Add each variable from your `.env` file to your Vercel project, including the ones prefixed with "REACT_APP\_". You'll be prompted to enter its value and choose one or more environments (development, preview, or production). See <a target="_blank" href="https://vercel.com/docs/environment-variables">Vercel Environment Variables</a> to learn more about how this works, how to update values through the Vercel UI, and how to use secrets for extra security.
+
+```
+vercel env add plain VARIABLE_NAME
+```
+
+Run this command to deploy to a unique preview URL. Your "preview" environment variables will be used.
+
+```
+vercel
+```
+
+Run this command to deploy to your production domain. Your "production" environment variables will be used.
+
+```
+vercel --prod
+```
+
+See <a target="_blank" href="https://vercel.com/docs/platform/deployments">Vercel Deployments</a> for more details.
 </p>
 </details>
 

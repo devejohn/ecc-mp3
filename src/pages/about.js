@@ -1,8 +1,7 @@
 import React from "react";
 import Meta from "./../components/Meta";
 import HeroSection2 from "./../components/HeroSection2";
-import StatsSection from "./../components/StatsSection";
-import TeamBiosSection from "./../components/TeamBiosSection";
+import Choir from "./../components/Choir";
 import CtaSection from "./../components/CtaSection";
 
 function AboutPage(props) {
@@ -14,21 +13,15 @@ function AboutPage(props) {
         size="large"
         bgImage=""
         bgImageOpacity={1}
-        title="We help you make money"
+        title="Music that moves you"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam!"
       />
-      <StatsSection
-        bgColor="light"
-        size="medium"
-        bgImage=""
-        bgImageOpacity={1}
-      />
-      <TeamBiosSection
+      <Choir
         bgColor="default"
         size="medium"
         bgImage=""
         bgImageOpacity={1}
-        title="Meet the Team"
+        title="Meet the Choir"
         subtitle=""
       />
       <CtaSection
@@ -36,11 +29,11 @@ function AboutPage(props) {
         size="medium"
         bgImage=""
         bgImageOpacity={1}
-        title="Ready to get started?"
+        title="Ready to get the music?"
         subtitle=""
-        buttonText="Get Started"
-        buttonColor="default"
-        buttonPath="/pricing"
+        buttonText="Let's go"
+        buttonColor="secondary"
+        buttonPath="https://epiphanycatholicchurch.weshareonline.org/"
       />
     </>
   );

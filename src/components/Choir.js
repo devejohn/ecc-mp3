@@ -26,26 +26,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function TeamBiosSection(props) {
+function Choir(props) {
   const classes = useStyles();
 
   const items = [
     {
       avatar: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
       name: "John Smith",
-      role: "Software Engineer",
+      role: "Pianist",
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo.",
     },
     {
       avatar: "https://uploads.divjoy.com/pravatar-150x-35.jpeg",
       name: "Lisa Zinn",
-      role: "Software Engineer",
+      role: "Cantor",
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
     },
     {
       avatar: "https://uploads.divjoy.com/pravatar-150x-16.jpeg",
       name: "Diana Low",
-      role: "Designer",
+      role: "Musician",
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!",
     },
   ];
@@ -103,4 +103,4 @@ function TeamBiosSection(props) {
   );
 }
 
-export default TeamBiosSection;
+export default Choir;

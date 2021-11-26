@@ -24,10 +24,10 @@ function SettingsNav(props) {
         value="password"
       />
       <Tab
-        component={Link}
-        to="/settings/billing"
-        label="Billing"
-        value="billing"
+        label="Donation"
+        value="donation"
+        component="a"
+        href="https://epiphanycatholicchurch.weshareonline.org/"
       />
     </Tabs>
   );
